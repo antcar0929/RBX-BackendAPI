@@ -1,0 +1,7 @@
+/node_modules
+/.upm
+/.next
+.env
+/.yarn
+.yarnrc
+.npmrc
