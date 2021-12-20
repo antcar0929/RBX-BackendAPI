@@ -1,9 +1,19 @@
+# Development
 .env
+/bash
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Packaging
+/.upm/
+/out/
+/build
+.yarn/*
+.npmrc
 /node_modules
 package-lock.json
 yarn.lock
-.yarn/*
-.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
