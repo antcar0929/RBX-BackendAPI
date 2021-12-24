@@ -14,7 +14,7 @@ server
   .disable('x-powered-by')
   .use('/data', require('./src/routes/data'))
   .use('/action', require('./src/routes/action'))
-  .use((req, res) => res.status(404).json({ error: '404 Not Found' }))
+  .use((req, res) => res.json({ status: 'OK' }))
   .listen(3000, () => {
     console.log('HTTP Server is ready!')
   })

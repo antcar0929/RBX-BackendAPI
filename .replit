@@ -1,2 +1,2 @@
 language = "bash"
-run = "bash scripts/startup.sh"
+run = ["bash", "scripts/startup.sh"]
