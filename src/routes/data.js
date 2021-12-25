@@ -1,5 +1,6 @@
-const router = require('express').Router()
-const BannedUsr = require('../../models/bannedUser')
+import { Router } from 'express'
+import BannedUsr from '../../models/bannedUser.js'
+const router = Router()
 
 router.get('/versions', (req, res) => res.json(process.versions))
 
@@ -47,4 +48,4 @@ router.post('/ban_status/modify/', async (req, res) => {
   })
 })
 
-module.exports = router
+export default router

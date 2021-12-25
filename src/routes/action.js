@@ -1,6 +1,7 @@
-const router = require('express').Router()
-const { noblox } = require('../robloxClient')
-const BannedUsr = require('../../models/bannedUser')
+import { Router } from 'express'
+import noblox from '../robloxClient.js'
+import BannedUsr from '../../models/bannedUser.js'
+const router = Router()
 
 /*
 {
@@ -62,4 +63,4 @@ router.post('/dw/tm/', async (req, res) => {
   return resa('0x0')
 })
 */
-module.exports = router
+export default router

@@ -27,6 +27,4 @@ async function checkUserPurchase(noblox, groupId) {
   }
 }
 
-module.exports = {
-  checkUserPurchase,
-}
+export { checkUserPurchase }

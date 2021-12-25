@@ -1,6 +1,9 @@
-const { model, Schema } = require('mongoose')
+import mongoose from 'mongoose'
+const { model, Schema } = mongoose
+
 const BUSchema = new Schema({
   UserId: { type: String },
   Msg: { type: String, default: null, required: false },
 })
-module.exports = model('BannedUsers', BUSchema)
+
+export default model('BannedUsers', BUSchema)
