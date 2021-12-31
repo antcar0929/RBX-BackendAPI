@@ -1,10 +1,25 @@
 {
-  "name": "robloxverify",
   "private": true,
+  "name": "rbx-backendapi",
   "version": "1.0.0",
-  "description": "hello",
+  "description": "Backend Process API Server of ROBLOX game.",
+  "license": "ISC",
+  "author": "",
+  "homepage": "https://github.com/RealKoolisw/RBX-BackendAPI#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RealKoolisw/RBX-BackendAPI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RealKoolisw/RBX-BackendAPI/issues"
+  },
   "type": "module",
   "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "start": "node --use_strict index.js",
+    "update": "ncu -u"
+  },
   "dependencies": {
     "body-parser": "^1.19.1",
     "compression": "^1.7.4",
@@ -16,10 +31,5 @@
     "npm-check-updates": "^12.0.5",
     "prettier": "^2.5.1"
   },
-  "scripts": {
-    "start": "node --use_strict index.js",
-    "format": "prettier --write .",
-    "update": "ncu -u"
-  },
-  "license": "ISC"
+  "keywords": []
 }
