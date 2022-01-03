@@ -1,10 +1,9 @@
 {
-  "private": true,
+  "private": "true",
   "name": "rbx-backendapi",
   "version": "1.0.0",
   "description": "Backend Process API Server of ROBLOX game.",
-  "license": "ISC",
-  "author": "",
+  "author": "RealKoolisw",
   "homepage": "https://github.com/RealKoolisw/RBX-BackendAPI#readme",
   "repository": {
     "type": "git",
@@ -16,7 +15,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write .",
+    "format": "prettier-package-json --write *.json ./**/*.json && prettier --write .",
     "start": "node --use_strict index.js",
     "update": "ncu -u"
   },
@@ -25,11 +24,13 @@
     "compression": "^1.7.4",
     "express": "^4.17.2",
     "mongoose": "^6.1.4",
-    "noblox.js": "^4.12.0"
+    "noblox.js": "^4.12.0",
+    "psl": "^1.8.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
-    "npm-check-updates": "^12.0.5",
-    "prettier": "^2.5.1"
-  },
-  "keywords": []
+    "npm-check-updates": "^12.1.0",
+    "prettier": "^2.5.1",
+    "prettier-package-json": "^2.6.0"
+  }
 }

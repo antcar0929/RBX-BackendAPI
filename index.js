@@ -11,7 +11,9 @@ mongoose.connect(`${process.env.MONGO_DB}Roblox`, {
   useUnifiedTopology: true,
   autoIndex: true,
 })
+
 server
+  .set('port', process.env.PORT || 3000)
   .use(bodyParser.urlencoded({ extended: true }))
   .use(bodyParser.json())
   .disable('etag')
@@ -19,9 +21,7 @@ server
   .use('/data', dataRoute)
   .use('/action', actionRoute)
   .use((req, res) => res.json({ status: 'OK' }))
-  .listen(3000, () => {
-    console.log('HTTP Server is ready!')
-  })
+  .listen(server.get('port'), () => console.log('HTTP Server is ready!'))
 
 process.on('uncaughtException', (err) => console.log(err))
 process.on('unhandledRejection', (err) => console.log(err))
