@@ -23,10 +23,8 @@
     "body-parser": "^1.19.1",
     "compression": "^1.7.4",
     "express": "^4.17.2",
-    "mongoose": "^6.1.4",
-    "noblox.js": "^4.12.0",
-    "psl": "^1.8.0",
-    "request": "^2.88.2"
+    "mongoose": "^6.1.5",
+    "noblox.js": "^4.12.0"
   },
   "devDependencies": {
     "npm-check-updates": "^12.1.0",
