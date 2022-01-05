@@ -16,6 +16,8 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier-package-json --write *.json ./**/*.json && prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "start": "node --use_strict index.js",
     "update": "ncu -u"
   },
@@ -27,6 +29,7 @@
     "noblox.js": "^4.12.0"
   },
   "devDependencies": {
+    "eslint": "^8.6.0",
     "npm-check-updates": "^12.1.0",
     "prettier": "^2.5.1",
     "prettier-package-json": "^2.6.0"
